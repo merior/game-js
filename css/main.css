@@ -1,5 +1,44 @@
 .guy{
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.points{
+    position: absolute;
+    top: 300px;
+}
+
+.stop{
+    position: absolute;
+    top: 338px;
+    left: 500px;
+}
+.closed{
+    display: none;
+}
+.modal{
+    display: flex;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+.wid{
+    margin:20px
+}
+.modal__overlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 60;
     background-color: black;
+    opacity: 0.5;
 }
