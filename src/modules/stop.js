@@ -1,25 +1,30 @@
+// const timer = require(`./modules/timer`)
+// const point = require(`./modules/point`)
+// const move = require(`./modules/move`)
+
 const stop = () => {
   
-    const stopBtn = document.querySelectorAll('.stop')
-    const startBtn = document.querySelectorAll('.wid__btn')
-    const modal = document.querySelectorAll('.modal')
-    const modalOverlay = document.querySelectorAll('.modal__overlay')
+    const stopBtn = document.querySelector('.stop')
+    const startBtn = document.querySelector('.wid__btn')
+    const modal = document.querySelector('.modal')
+    const modalOverlay = document.querySelector('.modal__overlay')
 
-    console.log(stopBtn)
-    console.log(startBtn)
-    console.log(modal)
-    console.log(modalOverlay)
+    stopBtn.addEventListener("click", function(){
+      console.log(1);
 
-    // stopBtn.addEventListener("click", function(){
-    //     modal.classList.toggle("closed");
-    //     modalOverlay.classList.toggle("closed");
-    //  });
+        modal.classList.remove("closed");
+        modalOverlay.classList.remove("closed");
+
+         // timer2.Stop();
+     });
 
      startBtn.addEventListener("click", function(){
-        // modal.classList.toggle("closed");
-        // modalOverlay.classList.toggle("closed");
-        console.log('click')
+        modal.classList.add("closed");
+        modalOverlay.classList.add("closed");
+        
      });
+
+
 }
 
 module.exports = stop

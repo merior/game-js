@@ -2,8 +2,10 @@ const move = () => {
 
 
     const box5Move = document.querySelector('.guy');
+    const stopBtn = document.querySelector('.stop')
+    const startBtn = document.querySelector('.wid__btn')
 
-document.addEventListener('keydown', (e) => {
+const moveF = function (e){
   let lastTopCoords = parseFloat(box5Move.style.top);
   let lastLeftCoords = parseFloat(box5Move.style.left);
 
@@ -29,7 +31,23 @@ document.addEventListener('keydown', (e) => {
     }
     default: break;
   }
+};
+
+document.addEventListener('keydown', (e) => {
+  moveF(e)
+})
+
+
+
+stopBtn.addEventListener("click", function(){
+  console.log(2);
+  document.removeEventListener('keydown', moveF)
 });
+
+// startBtn.addEventListener("click", function(){
+// timer = setTimeout(countdown, 5000);
+// });
+
 }
 
 module.exports = move

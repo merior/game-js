@@ -4,6 +4,6 @@ const point = require(`./modules/point`)
 const stop = require(`./modules/stop`)
 
 move()
-// timer()
-// point()
+timer()
+point()
 stop()

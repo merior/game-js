@@ -20,17 +20,22 @@
 .closed{
     display: none;
 }
-.modal{
-    display: flex;
+/* .modal{
+    
+    
+} */
+.wid{
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-}
-.wid{
-    margin:20px
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px
 }
 .modal__overlay{
     top: 0;
